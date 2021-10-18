@@ -4,6 +4,9 @@
       <w>btre</w>
       <w>endblock</w>
       <w>lightbox</w>
+      <w>navbar</w>
+      <w>toggler</w>
+      <w>topbar</w>
     </words>
   </dictionary>
 </component>

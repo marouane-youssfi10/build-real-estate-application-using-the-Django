@@ -2,13 +2,18 @@
   <dictionary name="admin">
     <words>
       <w>btre</w>
+      <w>btredb</w>
       <w>consectetur</w>
       <w>endblock</w>
       <w>eveniet</w>
       <w>lightbox</w>
+      <w>marouane</w>
       <w>navbar</w>
+      <w>postgresql</w>
+      <w>sqft</w>
       <w>toggler</w>
       <w>topbar</w>
+      <w>zipcode</w>
     </words>
   </dictionary>
 </component>

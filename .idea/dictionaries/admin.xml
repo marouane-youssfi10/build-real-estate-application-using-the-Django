@@ -10,6 +10,7 @@
       <w>endfor</w>
       <w>eveniet</w>
       <w>extrastyle</w>
+      <w>gmail</w>
       <w>lightbox</w>
       <w>marouane</w>
       <w>navbar</w>
@@ -17,9 +18,11 @@
       <w>postgresql</w>
       <w>relators</w>
       <w>rhode</w>
+      <w>smtp</w>
       <w>sqft</w>
       <w>toggler</w>
       <w>topbar</w>
+      <w>ymarouane</w>
       <w>zipcode</w>
     </words>
   </dictionary>

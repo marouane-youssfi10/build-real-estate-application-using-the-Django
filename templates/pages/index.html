@@ -23,7 +23,8 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                           <label class="sr-only">Keywords</label>
-                          <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)"
+                          <input type="text" name="keywords" class="form-control"
+                                 placeholder="Keyword (Taller Ceilings, House with garden, etc)"
                                  value="{{ values.keywords }}">
                         </div>
 
@@ -31,7 +32,7 @@
                         <div class="col-md-6 mb-3">
                           <label class="sr-only">State</label>
                           <select name="state" class="form-control">
-                            <option selected="true" disabled="disabled">State (All)</option>
+                            <option selected="true" disabled="disabled">State</option>
                             {% for key,value in state_choices.items %}
                                     <option value="{{ key }}"
                                             {% if key == values.state %}
@@ -51,7 +52,7 @@
                       <div class="col-md-6 mb-3">
                         <label class="sr-only">Bedrooms</label>
                         <select name="bedrooms" class="form-control">
-                          <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                          <option selected="true" disabled="disabled">Bedrooms</option>
                           {% for key,value in bedroom_choices.items %}
                             <option value="{{ key }}"
                                   {% if key == values.bedrooms %}
@@ -75,7 +76,7 @@
                     <div class="form-row">
                       <div class="col-md-12 mb-3">
                         <select name="price" class="form-control" id="type">
-                          <option selected="true" disabled="disabled">Max Price (Any)</option>
+                          <option selected="true" disabled="disabled">Max Price</option>
                           {% for key,value in price_choices.items %}
                             <option value="{{ key }}"
                             {% if key == values.price %}

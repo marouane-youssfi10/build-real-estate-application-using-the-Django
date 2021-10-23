@@ -2022,10 +2022,12 @@ fieldset:disabled a.btn {
   border-radius: 0.2rem; }
 
 .btn-block {
-  display: block;
-  width: 100%; }
+  /* display: block;*/
+  width: 50%;
+  }
   .btn-block + .btn-block {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+     }
 
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,

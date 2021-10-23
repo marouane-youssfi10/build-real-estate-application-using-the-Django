@@ -21,14 +21,21 @@
 
                     <!-- Keywords -->
                     <div class="form-row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                           <label class="sr-only">Keywords</label>
                           <input type="text" name="keywords" class="form-control"
                                  placeholder="Keyword (Taller Ceilings, House with garden, etc)"
-                                 value="{{ values.keywords }}">
+                                 value="{{ values.keywords }}" required>
                         </div>
 
-                        <!-- State -->
+                    </div>
+
+                    <!-- Form Row 2 -->
+
+                    <!-- Bedrooms -->
+                    <div class="form-row">
+
+                      <!-- State -->
                         <div class="col-md-6 mb-3">
                           <label class="sr-only">State</label>
                           <select name="state" class="form-control">
@@ -42,13 +49,7 @@
                             {% endfor %}
                           </select>
                         </div>
-                    </div>
 
-
-                    <!-- Form Row 2 -->
-
-                    <!-- Bedrooms -->
-                    <div class="form-row">
                       <div class="col-md-6 mb-3">
                         <label class="sr-only">Bedrooms</label>
                         <select name="bedrooms" class="form-control">
@@ -63,30 +64,34 @@
                         </select>
                       </div>
 
-                      <!-- City -->
-                      <div class="col-md-6 mb-3">
-                        <label class="sr-only">City</label>
-                        <input type="text" name="city" class="form-control" placeholder="City"
-                        value="{{ values.city }}">
-                      </div>
-
                     </div>
 
                     <!-- Price -->
                     <div class="form-row">
-                      <div class="col-md-12 mb-3">
-                        <select name="price" class="form-control" id="type">
-                          <option selected="true" disabled="disabled">Max Price</option>
-                          {% for key,value in price_choices.items %}
-                            <option value="{{ key }}"
-                            {% if key == values.price %}
-                                    selected
-                             {% endif %}
-                            >{{ value }}</option>
-                          {% endfor %}
-                        </select>
-                      </div>
+
+                        <!-- City -->
+                        <div class="col-md-12 mb-3">
+                          <label class="sr-only">City</label>
+                          <input type="text" name="city" class="form-control" placeholder="City"
+                          value="{{ values.city }}">
+                        </div>
                     </div>
+
+                    <div class="form-row">
+                       <div class="col-md-12 mb-3">
+                          <select name="price" class="form-control" id="type">
+                            <option selected="true" disabled="disabled">Max Price</option>
+                            {% for key,value in price_choices.items %}
+                              <option value="{{ key }}"
+                              {% if key == values.price %}
+                                      selected
+                               {% endif %}
+                              >{{ value }}</option>
+                            {% endfor %}
+                          </select>
+                        </div>
+                    </div>
+
 
                     <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
                   </form>
@@ -96,13 +101,14 @@
           </div>
           </section>
 
+          <br>
           <!-- Alerts -->
           {% include 'partials/_alerts.html' %}
 
           <!-- Listings -->
           <section id="listings" class="py-5">
           <div class="container">
-            <h3 class="text-center mb-3">Latest Listings</h3>
+            <!--<h3 class="text-center mb-3">Latest Listings</h3> -->
             <div class="row">
 
               {% if listings %}

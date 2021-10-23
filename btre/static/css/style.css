@@ -30,11 +30,11 @@ img {
 #showcase .overlay {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -66px;
+    left: 600px;
     min-height: 400px;
-    width: 96%;
-    background: rgb(39 61 95 / 74%);
+    width: 50%;
+    background: rgb(39 61 95 / 85%);
     border-radius: 22px;
  }
 

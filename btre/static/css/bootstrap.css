@@ -1647,16 +1647,18 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(16, 40, 78, 0.5); }
 
 .btn-secondary {
-  color: #212529;
-  background-color: #30caa0;
-  border-color: #30caa0;
+  color: #0280ff;
+  background-color: #62add9;
+  border-color: #62add9;
  }
-  .btn-secondary:hover {
+.btn-secondary:hover {
     color: #fff;
-    background-color: #29ab88;
-    border-color: #26a17f; }
-  .btn-secondary:focus, .btn-secondary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(48, 202, 160, 0.5); }
+    background-color: #7e9db1;
+    border-color: #62add9;
+  }
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgb(140 202 212);
+  }
   .btn-secondary.disabled, .btn-secondary:disabled {
     color: #212529;
     background-color: #30caa0;
@@ -1664,11 +1666,13 @@ fieldset:disabled a.btn {
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
   .show > .btn-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #26a17f;
-    border-color: #249677; }
+    background-color: #dfdfdf;
+    border-color: #dfdfdf;
+    }
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-secondary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(48, 202, 160, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgb(208 219 216); }
+
 
 .btn-success {
   color: #fff;
@@ -2023,7 +2027,7 @@ fieldset:disabled a.btn {
 
 .btn-block {
   /* display: block;*/
-  width: 50%;
+  width: 100%;
   }
   .btn-block + .btn-block {
     margin-top: 0.5rem;
@@ -5332,7 +5336,7 @@ button.bg-dark:focus {
   padding-left: 1.5rem !important; }
 
 .p-5 {
-  padding: 3rem !important; }
+  padding: 1.5rem !important; }
 
 .pt-5,
 .py-5 {
@@ -6191,7 +6195,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: #071224 !important; }
 
 .text-secondary {
-  color: #30caa0 !important; }
+  color: #000000 !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
   color: #26a17f !important; }

@@ -3382,7 +3382,7 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #212529;
-  background-color: #30caa0; }
+  background-color: #62add9; }
   .badge-secondary[href]:hover, .badge-secondary[href]:focus {
     color: #212529;
     text-decoration: none;
@@ -6195,7 +6195,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: #071224 !important; }
 
 .text-secondary {
-  color: #000000 !important; }
+  color: #62add9 !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
   color: #26a17f !important; }
